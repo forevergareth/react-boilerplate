@@ -32,7 +32,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '../css/app.css'
     }),
-    new UglifyJsPlugin(),
+    // soure map issue
+    //new UglifyJsPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
